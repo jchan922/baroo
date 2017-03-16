@@ -11,41 +11,44 @@
 
     <body>
         <div id="nav_div">
-            <div>
+            <div id="menu_left">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <div id="menu_center">
                 <h1 id="baroo_logo">Baroo</h1>
                 <!-- <p id="los_angeles">Los Angeles</p> -->
+                <!-- <p id="los_angeles">Los Angeles</p> -->
             </div>
-            <!-- <div>
+            <div id="menu_right">
+            </div>
+
+            <div id="menu_list">
                 <ul>
                     <li>Home</li>
                     <li>About</li>
                     <li>Menu</li>
-                    <li>Images</li>
                     <li>Press</li>
                     <li>Contact</li>
                 </ul>
-            </div> -->
+            </div>
         </div>
+        <div class="placeholder"></div>
         <div id="content_div">
             <img id="main_img" src="./img/main3.jpg" alt="">
 
             <div id="about_div">
-                <h2 id="about_header">BAROO - the bowl that Buddhist monks use for their meals.</h2>
+                <h2 id="about_header">BAROO -- the bowl that Buddhist monks use for their meals.</h2>
                 <p class="about_p">Our food is served with love and respect to nature and people.
                 We use local, sustainable, and organic ingredients, to capture the spirit of mother nature and push the boundaries of what's possible.</p>
                 <p class="about_p">We are an experimental concept kitchen that explores fermentation. Our menu often changes based on the season, local sustainability, and our imaginations.</p>
             </div>
 
-            <div class="image_container">
-                <img id="img" src="img/food1.jpg" alt="">
+            <div id="nav_reappear" class="image_container">
+                <img class="img" src="img/food1.jpg" alt="">
             </div>
-            <div class="image_container">
-                <img id="img" src="img/food4.jpg" alt="">
-            </div>
-            <div class="image_container">
-                <img id="img" src="img/food7.jpg" alt="">
-            </div>
-
 
             <div id="press_div">
                 <h2 id="press_header">PRESS + AWARDS</h2>
@@ -71,6 +74,13 @@
                 </div>
             </div>
 
+            <div class="image_container second_imgs">
+                <img class="img" src="img/food4.jpg" alt="">
+            </div>
+            <div class="image_container second_imgs">
+                <img class="img" src="img/food7.jpg" alt="">
+            </div>
+
             <div id="connect_div">
                 <div id="connect_large">
                     <div class="connect_large_inner">
@@ -93,8 +103,12 @@
                     <a href="https://plus.google.com/115897678507906386901/about?hl=en" target="_blank"><img src="img/001-google-plus.png"></a>
                 </div>
             </div>
-
         </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
 
     </body>
 

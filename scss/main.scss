@@ -1,43 +1,94 @@
 @import "variables";
+@import "menu";
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-size: 14px;
+}
+
+.placeholder {
+    height: 0;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    opacity: .87;
+    margin: 5px 0 5px 10%;
+    transition: .4s;
 }
 
 #nav_div {
     text-align: center;
     background-color: #141414;
-    opacity: .87;
-    padding: 2.5px 0;
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    z-index: 4;
 
-    & #baroo_logo {
-        font-family: 'Titillium Web', sans-serif;
-        font-weight: 100;
-        color: white;
-        opacity: .87;
-        font-size: 3em;
-        letter-spacing: 0.2em;
-        padding: 0;
-        margin: 0;
+    & .change .bar1 {
+        transform: rotate(45deg) translate(5px, 7px);
     }
 
-    & #los_angeles {
-        font-family: 'Titillium Web', sans-serif;
-        font-weight: 100;
-        color: white;
-        letter-spacing: 0.2em;
-        padding: 0;
-        margin: 0;
+    & .change .bar2 {
+        opacity: 0;
     }
 
-    & ul {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        color: white;
-        opacity: .87;
+    & .change .bar3 {
+        transform: rotate(-45deg) translate(5px, -8px) ;
     }
+
+
+    & #menu_left {
+        cursor: pointer;
+    }
+
+    & #menu_left, #menu_center, #menu_right{
+        flex: 1;
+
+        & #baroo_logo {
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: 100;
+            color: white;
+            opacity: .87;
+            font-size: 3em;
+            letter-spacing: 0.2em;
+            padding: 0;
+            margin: 0;
+        }
+
+        & #los_angeles {
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: 100;
+            color: white;
+            opacity: .75;
+            letter-spacing: 0.2em;
+            padding: 0;
+            margin: 0;
+        }
+
+        & ul {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            color: white;
+            opacity: .87;
+        }
+    }
+}
+
+.nav_placeholder {
+    padding: 5px 0;
 }
 
 #content_div {
@@ -46,10 +97,11 @@
     & #main_img {
         max-width: 100%;
         opacity: .85;
+        filter: brightness(1.1);
     }
 
     & #about_div {
-        border: 1px solid green;
+        // border: 1px solid green;
         width: 80%;
         margin: 50px auto 50px auto;
         padding: 15px 0;
@@ -78,19 +130,25 @@
         }
     }
 
+    .second_imgs{
+        width: 75%;
+        margin: 0 12.5%;
+    }
+
     & .image_container {
         // border: 1px solid green;
-        & #img{
-            max-width: 80%;
-            margin: 0 10%;
+        & .img{
+            max-width: 70%;
+            margin: 0 15%;
             // border: 1px solid orange;
             opacity: .75;
+            filter: brightness(1);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         }
     }
 
-
     & #press_div {
-        border: 1px solid red;
+        // border: 1px solid red;
         display: flex;
         flex-direction: column;
         width: 80%;
@@ -98,6 +156,8 @@
         padding: 15px 0;
         font-size: 2em;
         & #press_header {
+            padding: 5px 0;
+            border-bottom: 1px solid grey;
             font-family: 'Titillium Web', sans-serif;
             font-weight: 400;
             font-size: 2rem;
@@ -133,11 +193,11 @@
     }
 
     & #connect_div{
-        border: 1px solid blue;
+        // border: 1px solid blue;
         display: flex;
         flex-direction: column;
         width: 65%;
-        margin: 0 auto 50px auto;
+        margin: 50px auto 50px auto;
         padding: 15px 0;
         font-size: 2em;
         & #connect_large  {
