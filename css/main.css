@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px; }
+
+#nav_div {
+  text-align: center;
+  background-color: #141414;
+  opacity: .87;
+  padding: 2.5px 0; }
+  #nav_div #baroo_logo {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 100;
+    color: white;
+    opacity: .87;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    padding: 0;
+    margin: 0; }
+  #nav_div #los_angeles {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 100;
+    color: white;
+    letter-spacing: 0.2em;
+    padding: 0;
+    margin: 0; }
+  #nav_div ul {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    opacity: .87; }
+
+#content_div {
+  width: 100%; }
+  #content_div #main_img {
+    max-width: 100%;
+    opacity: .85; }
+  #content_div #about_div {
+    border: 1px solid green;
+    width: 80%;
+    margin: 50px auto 50px auto;
+    padding: 15px 0;
+    font-size: 2em; }
+    #content_div #about_div #about_header {
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 400;
+      color: black;
+      text-align: center;
+      opacity: .75;
+      margin: 0;
+      padding: 0 10px;
+      font-size: 2rem;
+      line-height: 1.25; }
+    #content_div #about_div .about_p {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      color: black;
+      text-align: center;
+      opacity: .54;
+      padding: 15px 10px 0 10px;
+      font-size: 1.25rem;
+      line-height: 1.3; }
+  #content_div .image_container #img {
+    max-width: 80%;
+    margin: 0 10%;
+    opacity: .75; }
+  #content_div #press_div {
+    border: 1px solid red;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 80%;
+    margin: 50px auto 50px auto;
+    padding: 15px 0;
+    font-size: 2em; }
+    #content_div #press_div #press_header {
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+      opacity: .75;
+      text-align: center; }
+    #content_div #press_div .press_container {
+      -ms-flex: 1;
+          flex: 1;
+      padding: 5px 0; }
+      #content_div #press_div .press_container a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer; }
+      #content_div #press_div .press_container a:hover {
+        color: #FFD600; }
+      #content_div #press_div .press_container h3 {
+        text-align: center;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 400;
+        opacity: .75;
+        font-size: 1.5rem; }
+      #content_div #press_div .press_container p {
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        opacity: .54;
+        font-size: 1rem; }
+  #content_div #connect_div {
+    border: 1px solid blue;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 65%;
+    margin: 0 auto 50px auto;
+    padding: 15px 0;
+    font-size: 2em; }
+    #content_div #connect_div #connect_large {
+      -ms-flex: 2;
+          flex: 2;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      #content_div #connect_div #connect_large .connect_large_inner {
+        -ms-flex: 1;
+            flex: 1;
+        text-align: center; }
+        #content_div #connect_div #connect_large .connect_large_inner h2 {
+          font-family: 'Titillium Web', sans-serif;
+          font-weight: 400;
+          font-size: 2rem;
+          opacity: .75; }
+        #content_div #connect_div #connect_large .connect_large_inner p {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 400;
+          opacity: .54;
+          font-size: 1rem; }
+      #content_div #connect_div #connect_large .connect_large_inner:last-child {
+        margin-top: 15px; }
+    #content_div #connect_div #connect_small {
+      max-width: 28%;
+      margin: 10px auto 0 auto;
+      -ms-flex: 1;
+          flex: 1;
+      display: -ms-flexbox;
+      display: flex;
+      text-align: center; }
+      #content_div #connect_div #connect_small a {
+        -ms-flex: 1;
+            flex: 1; }
+        #content_div #connect_div #connect_small a img {
+          max-width: 80%;
+          margin: auto; }
