@@ -16,7 +16,7 @@
     -ms-flex-direction: column;
         flex-direction: column;
     list-style: none; }
-    #menu_list ul li {
+    #menu_list ul li, #menu_list ul a {
       font-family: 'Titillium Web', sans-serif;
       font-weight: 100;
       color: white;
@@ -25,6 +25,7 @@
           -ms-grid-row-align: stretch;
           align-self: stretch;
       text-align: center;
+      text-decoration: none;
       font-size: 1.5rem; }
 
 @keyframes fadein {
@@ -130,15 +131,35 @@
       padding: 15px 10px 0 10px;
       font-size: 1.25rem;
       line-height: 1.3; }
-  #content_div .second_imgs {
+  #content_div .image_container {
     width: 75%;
     margin: 0 12.5%; }
-  #content_div .image_container .img {
-    max-width: 70%;
-    margin: 0 15%;
-    opacity: .75;
-    filter: brightness(1);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    #content_div .image_container .img {
+      max-width: 70%;
+      margin: 0 15%;
+      opacity: .75;
+      filter: brightness(1);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  #content_div #menu_div {
+    width: 80%;
+    margin: 50px auto 50px auto;
+    padding: 15px 0;
+    font-size: 2em; }
+    #content_div #menu_div #menu_header {
+      padding: 5px 0;
+      border-bottom: 1px solid grey;
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+      opacity: .75;
+      text-align: center; }
+    #content_div #menu_div p {
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      opacity: .54;
+      font-size: 1rem;
+      padding: 10px; }
   #content_div #press_div {
     display: -ms-flexbox;
     display: flex;

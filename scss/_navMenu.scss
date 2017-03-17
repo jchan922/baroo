@@ -16,7 +16,7 @@
         flex-direction: column;
         list-style: none;
 
-        & li {
+        & li, a {
             // border: 1px solid red;
             font-family: 'Titillium Web', sans-serif;
             font-weight: 100;
@@ -24,6 +24,7 @@
             opacity: .87;
             align-self: stretch;
             text-align: center;
+            text-decoration: none;
             font-size: 1.5rem;
         }
 

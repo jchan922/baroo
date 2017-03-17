@@ -1,5 +1,5 @@
 @import "variables";
-@import "menu";
+@import "navMenu";
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -130,13 +130,9 @@
         }
     }
 
-    .second_imgs{
+    & .image_container {
         width: 75%;
         margin: 0 12.5%;
-    }
-
-    & .image_container {
-        // border: 1px solid green;
         & .img{
             max-width: 70%;
             margin: 0 15%;
@@ -146,6 +142,31 @@
             box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         }
     }
+
+    & #menu_div {
+        width: 80%;
+        margin: 50px auto 50px auto;
+        padding: 15px 0;
+        font-size: 2em;
+        #menu_header {
+            padding: 5px 0;
+            border-bottom: 1px solid grey;
+            font-family: 'Titillium Web', sans-serif;
+            font-weight: 400;
+            font-size: 2rem;
+            opacity: .75;
+            text-align: center;
+        }
+        & p {
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            opacity: .54;
+            font-size: 1rem;
+            padding: 10px;
+        }
+    }
+
 
     & #press_div {
         // border: 1px solid red;
